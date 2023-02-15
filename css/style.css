@@ -103,26 +103,6 @@ legend {
     max-width: 992;
   }
 }
-@media (max-width: 992px) {
-  .container {
-    max-width: 760px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    max-width: 576px;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    max-width: 480px;
-  }
-}
-@media (max-width: 480px) {
-  .container {
-    max-width: 320px;
-  }
-}
 @font-face {
   font-family: "Luckiest Guy";
   src: url("../fonts/LuckiestGuy.ttf") format("truetype");
@@ -279,4 +259,56 @@ legend {
   line-height: 18px;
   text-transform: uppercase;
   color: white;
+}
+
+.burger-btn {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .search {
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 768px) and (max-width: 576px) {
+  .container {
+    width: 280px;
+  }
+  .logo__text {
+    font-size: 13.4237px;
+    line-height: 13px;
+  }
+  .search {
+    display: none;
+  }
+  .profile {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .burger-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 16px;
+    height: 11px;
+  }
+  .burger-btn span {
+    background: #333333;
+    width: 16px;
+    height: 1px;
+  }
 }
