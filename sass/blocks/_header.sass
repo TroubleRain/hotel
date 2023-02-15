@@ -1,39 +1,63 @@
-
 .header
-  padding: 40px 0
-  background: white
+
   &-navbar
-
-  // .header-navbar__container
-
-  &__container
+    padding: 40px 0
+    background: $white
+    &__container
+      display: flex
+      justify-content: space-between
+      align-items: center
 
 .container
 
 .logo
 
-  // .logo__text
-
   &__text
+    font-family: 'Luckiest Guy'
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 24px
+    color: $l-black
+    &>span
+      color: $red
 
 .search
-
-.serach
-
-  // .serach__text
-
+  width: 350px
+  height: 40px
+  background: #F5FAFE
+  position: relative
+  border-radius: 6px
+  overflow: hidden
+  display: flex
+  align-items: center
+  margin-right: auto
+  margin-left: 108px
   &__text
-
-  // .serach__btn
-
+    font-family: 'Mulish'
+    font-size: 12px
+    line-height: 15px
+    color: $l-black
+    font-weight: 400
+    margin-left: 23px
   &__btn
-
+    position: absolute
+    background: $red
+    top: 0
+    right: 0
+    height: 100%
+    width: 65px
 .profile
-
-  // .profile__img
-
+  display: flex
+  gap: 18px
+  align-items: center
   &__img
-
-  // .profile__name
-
+    width: 40px
+    height: 40px
+    overflow: hidden
+    border-radius: 50%
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
   &__name
