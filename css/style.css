@@ -223,6 +223,18 @@ legend {
   height: 100%;
   width: 65px;
 }
+.search__btn::after {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  content: "";
+  background: url("../../img/icon/search.svg") no-repeat;
+  width: 16px;
+  height: 16px;
+}
 
 .profile {
   display: -webkit-box;
@@ -244,4 +256,27 @@ legend {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.navbar {
+  background: #0A223D;
+  padding: 30px 0;
+}
+.navbar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar__link {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: white;
 }
