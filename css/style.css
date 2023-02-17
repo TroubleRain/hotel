@@ -90,8 +90,8 @@ legend {
 }
 
 .container {
-  max-width: 1110px;
-  width: 100%;
+  width: 1110px;
+  max-width: 98%;
   padding: 0px 5px;
   margin: 0px auto;
   min-height: 40px;
@@ -168,7 +168,7 @@ legend {
   color: #333333;
 }
 .logo__text > span {
-  color: #EC1F46;
+  color: red;
 }
 
 .search {
@@ -197,7 +197,7 @@ legend {
 }
 .search__btn {
   position: absolute;
-  background: #EC1F46;
+  background: red;
   top: 0;
   right: 0;
   height: 100%;
@@ -265,23 +265,26 @@ legend {
   display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .search {
     margin: auto;
   }
 }
 @media (max-width: 768px) {
+  .header {
+    color: #000000;
+  }
   .container {
     width: 700px;
   }
 }
-@media (max-width: 768px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .container {
-    width: 280px;
+    width: 480px;
   }
   .logo__text {
-    font-size: 13.4237px;
-    line-height: 13px;
+    font-size: 20.4237px;
+    line-height: 22px;
   }
   .search {
     display: none;
