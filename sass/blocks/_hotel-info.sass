@@ -1,32 +1,79 @@
 .hotel-info
-
+  padding: 22px px 20px px
   &__container
+    display: flex
+    justify-content: space-between
+    align-items: center
 
 .container
 
 .info
 
   &__wrapper
-
+    display: flex
+    flex-wrap: wrap
+    column-gap: 14px
   &__text
+    font-family: 'Mulish'
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
 
 .stars
   display: flex
-  width: 50px
-  height: 50px
+  height: 8px
+  width: 100%
+  margin-bottom: 5px
+.star
+  width: 8px
   &__item
+    height: 8px
+    width: 8px
+    fill: #F2994A
     display: flex
-    background: red
-    width: 50px
-    height: 50px
+
 .hotel
 
   &__name
-
+    font-family: 'Mulish'
+    font-style: normal
+    font-weight: 700
+    font-size: 24px
+    line-height: 30px
+    color: $l-black
 .flash-offer
-
+  padding: 3px 9px
+  background: #EC1F46
+  font-family: 'Mulish'
+  font-weight: 600
+  font-size: 10px
+  line-height: 13px
+  color: $white
+  border-radius: 3px
 .rate
-
+  width: 65px
+  height: 45px
+  background: #EC1F46
+  border-radius: 4px
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 9px 0 6px 0
+  color: $white
   &__text
-
+    font-family: 'Mulish'
+    font-style: normal
+    font-weight: 600
+    font-size: 8px
+    line-height: 10px
   &__grade
+    font-family: 'Mulish'
+    font-style: normal
+    font-weight: 700
+    font-size: 14px
+    line-height: 18px
+    display: inline-block
+    &::after
+      content: '/5'
+      display: inline-block
+      font-size: 10px

@@ -148,7 +148,7 @@ body {
 }
 .header-navbar {
   padding: 40px 0;
-  background: white;
+  background: #F5FAFE;
 }
 .header-navbar__container {
   display: -webkit-box;
@@ -268,6 +268,139 @@ body {
   display: none;
 }
 
+.breadcrumbs {
+  padding: 20px 0;
+}
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.breadcrumb__item {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  counter-reset: #333333;
+}
+.breadcrumb__item:not(:last-child)::after {
+  content: "/";
+  margin: 0 3px;
+}
+
+.hotel-info {
+  padding: 22px px 20px px;
+}
+.hotel-info__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 14px;
+     -moz-column-gap: 14px;
+          column-gap: 14px;
+}
+.info__text {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.star {
+  width: 8px;
+}
+.star__item {
+  height: 8px;
+  width: 8px;
+  fill: #F2994A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hotel__name {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.flash-offer {
+  padding: 3px 9px;
+  background: #EC1F46;
+  font-family: "Mulish";
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+  color: white;
+  border-radius: 3px;
+}
+
+.rate {
+  width: 65px;
+  height: 45px;
+  background: #EC1F46;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9px 0 6px 0;
+  color: white;
+}
+.rate__text {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+}
+.rate__grade {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: inline-block;
+}
+.rate__grade::after {
+  content: "/5";
+  display: inline-block;
+  font-size: 10px;
+}
+
 @media (max-width: 992px) {
   .search {
     margin: auto;
@@ -317,40 +450,33 @@ body {
     width: 16px;
     height: 1px;
   }
-}
-.breadcrumbs {
-  padding: 20px 0;
-}
-.breadcrumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.breadcrumb__item {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 13px;
-  counter-reset: #333333;
-}
-.breadcrumb__item:not(:last-child)::after {
-  content: "/";
-  margin: 0 3px;
-}
-
-.stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50px;
-  height: 50px;
-}
-.stars__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: red;
-  width: 50px;
-  height: 50px;
+  .info {
+    width: 100%;
+  }
+  .info__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .stars {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .hotel__name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 10px;
+  }
+  .flash-offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .rate {
+    display: none;
+  }
 }
