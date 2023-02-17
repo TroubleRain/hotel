@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Document</title>
@@ -128,28 +127,38 @@
       </div>
     </section>
     <section class="hotel-content">
-      <div class="container hotel-content__container">
-        <div class="slider"></div>
-        <div class="hotel-content__card">
-          <div class="card-top">
-            <div class="card-top__price">
-              <span class="card-top__price-text">price starts as</span>
-              <span class="card-top__price">$ 8,500</span>
-              <span class="card-top__time">per room / night</span>
-            </div>
-            <div class="card-top__room">
-              <span class="card-top__text">2 x Guests</span>
-              <span class="card-top__text">1 x Room</span>
+      <di class="container hotel-content__container">
+        <div class="swiper">
+          <div class="swiper__wrapper">
+            <div class="swiper__slide">
+              <img src="img/content/Rectangle 5.png" alt="" />
             </div>
           </div>
-          <div class="card-bottom">
-            <div class="card-bottom-left">Quick Booking</div>
-            <div class="card-bottom-right">12100</div>
-          </div>
-          <button class="card-btn">View Other Options</button>
+          <div class="swiper__button-prev"></div>
+          <div class="swiper__button-next"></div>
         </div>
-        <div class="hotel-content__map"></div>
-      </div>
+        <div class="hotel-content__wrapper">
+          <div class="hotel-content__card">
+            <div class="card-top">
+              <div class="card-top__price">
+                <span class="card-top__price-text">price starts as</span>
+                <span class="card-top__price">$ 8,500</span>
+                <span class="card-top__time">per room / night</span>
+              </div>
+              <div class="card-top__room">
+                <span class="card-top__text">2 x Guests</span>
+                <span class="card-top__text">1 x Room</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-left">Quick Booking</div>
+              <div class="card-bottom-right">12100</div>
+            </div>
+            <button class="card-btn">View Other Options</button>
+          </div>
+          <div class="hotel-content__map"></div>
+        </div>
+      </di>
     </section>
     <script src="js/index.js"></script>
   </body>

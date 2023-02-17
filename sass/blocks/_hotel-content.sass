@@ -1,0 +1,132 @@
+.hotel-content
+  margin-bottom: 70px
+  &__container
+    gap: 30px
+    display: flex
+    justify-content: space-between
+  &__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__card
+    padding: 29px 29px 26px 26px
+    flex-wrap: wrap
+    display: flex
+    border-radius: 8px
+    background: $bgc
+    width: 350px
+    height: 210px
+    color: $white
+
+  &__map
+    border-radius: 10px
+    width: 347px
+    height: 213px
+    background: red
+.swiper
+  width: 728px
+  height: 450px
+  position: relative
+  background: orangered
+  border-radius: 8px
+  overflow: hidden
+
+  &::after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    border-radius: 8px
+    z-index: 1
+  &__wrapper
+    position: absolute
+    width: 100%
+    height: 100%
+  &__slide
+    width: 100%
+    height: 100%
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__button-prev
+    transform: translateY(-50%)
+    position: absolute
+    background: url('../../img/arr-left.svg') no-repeat center
+    width: 30px
+    height: 30px
+    left: 19px
+    top: 50%
+    z-index: 2
+    cursor: pointer
+
+  &__button-next
+    transform: translateY(-50%)
+    position: absolute
+    background: url('../../img/arr-right.svg') no-repeat center
+    width: 30px
+    height: 30px
+    right: 16px
+    top: 50%
+    z-index: 2
+    cursor: pointer
+
+.card-top
+  display: flex
+  flex-basis: 100%
+  justify-content: space-between
+  align-items: center
+  &__price
+    display: flex
+    flex-direction: column
+    font-family: 'Nunito'
+    font-style: normal
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__price-text
+    font-family: 'Nunito'
+    font-size: 10px
+    line-height: 14px
+
+  &__time
+    font-family: 'Nunito'
+    font-size: 12px
+
+  &__room
+    display: flex
+    flex-direction: column
+    font-family: 'Nunito'
+    font-size: 12px
+    line-height: 16px
+
+  &__text
+    &:not(:last-child)
+      margin-bottom: 8px
+
+.card-bottom
+  display: flex
+  flex-basis: 100%
+  justify-content: space-between
+  font-family: 'Nunito'
+  font-weight: 600
+  font-size: 18px
+  line-height: 25px
+  margin-bottom: 17px
+  &-left
+
+  &-right
+
+.card-btn
+  width: 100%
+  padding: 13px 0
+  font-family: 'Nunito'
+  font-weight: 600
+  font-size: 14px
+  line-height: 19px
+  background: $red
+  border-radius: 4px

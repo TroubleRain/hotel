@@ -401,6 +401,191 @@ body {
   font-size: 10px;
 }
 
+.hotel-content {
+  margin-bottom: 70px;
+}
+.hotel-content__container {
+  gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hotel-content__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hotel-content__card {
+  padding: 29px 29px 26px 26px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+  background: #0A223D;
+  width: 350px;
+  height: 210px;
+  color: white;
+}
+.hotel-content__map {
+  border-radius: 10px;
+  width: 347px;
+  height: 213px;
+  background: red;
+}
+
+.swiper {
+  width: 728px;
+  height: 450px;
+  position: relative;
+  background: orangered;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.swiper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: -o-linear-gradient(top, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  border-radius: 8px;
+  z-index: 1;
+}
+.swiper__wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.swiper__slide {
+  width: 100%;
+  height: 100%;
+}
+.swiper__slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiper__button-prev {
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  background: url("../../img/arr-left.svg") no-repeat center;
+  width: 30px;
+  height: 30px;
+  left: 19px;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+.swiper__button-next {
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  background: url("../../img/arr-right.svg") no-repeat center;
+  width: 30px;
+  height: 30px;
+  right: 16px;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card-top__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+.card-top__price-text {
+  font-family: "Nunito";
+  font-size: 10px;
+  line-height: 14px;
+}
+.card-top__time {
+  font-family: "Nunito";
+  font-size: 12px;
+}
+.card-top__room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Nunito";
+  font-size: 12px;
+  line-height: 16px;
+}
+.card-top__text:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 17px;
+}
+.card-btn {
+  width: 100%;
+  padding: 13px 0;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  background: #EC1F46;
+  border-radius: 4px;
+}
+
 @media (max-width: 992px) {
   .search {
     margin: auto;
