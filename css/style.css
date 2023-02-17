@@ -171,7 +171,7 @@ body {
   color: #333333;
 }
 .logo__text > span {
-  color: red;
+  color: #EC1F46;
 }
 
 .search {
@@ -200,7 +200,7 @@ body {
 }
 .search__btn {
   position: absolute;
-  background: red;
+  background: #EC1F46;
   top: 0;
   right: 0;
   height: 100%;
@@ -290,7 +290,7 @@ body {
 }
 
 .hotel-info {
-  padding: 22px px 20px px;
+  padding: 22px 0px 20px 0px;
 }
 .hotel-info__container {
   display: -webkit-box;
