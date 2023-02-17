@@ -94,8 +94,11 @@ legend {
   max-width: 98%;
   padding: 0px 5px;
   margin: 0px auto;
-  min-height: 40px;
   border: 1px solid red;
+}
+
+body {
+  background: #F5FAFE;
 }
 
 @media (max-width: 1200px) {
@@ -314,4 +317,24 @@ legend {
     width: 16px;
     height: 1px;
   }
+}
+.breadcrumbs {
+  padding: 20px 0;
+}
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.breadcrumb__item {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  counter-reset: #333333;
+}
+.breadcrumb__item:not(:last-child)::after {
+  content: "/";
+  margin: 0 3px;
 }
