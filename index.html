@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Document</title>
@@ -127,39 +128,72 @@
       </div>
     </section>
     <section class="hotel-content">
-      <di class="container hotel-content__container">
+      <div class="container hotel-content__container">
+        <!-- Slider main container -->
         <div class="swiper">
-          <div class="swiper__wrapper">
-            <div class="swiper__slide">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
               <img src="img/content/Rectangle 5.png" alt="" />
             </div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
           </div>
-          <div class="swiper__button-prev"></div>
-          <div class="swiper__button-next"></div>
+          <!-- If we need pagination -->
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
         </div>
         <div class="hotel-content__wrapper">
-          <div class="hotel-content__card">
-            <div class="card-top">
-              <div class="card-top__price">
-                <span class="card-top__price-text">price starts as</span>
-                <span class="card-top__price">$ 8,500</span>
-                <span class="card-top__time">per room / night</span>
+          <div class="card">
+            <div class="card__wrapper">
+              <div class="card__price">
+                <span>price starts as</span>
+                <span>$ 8,500</span>
+                <span>per room / night</span>
               </div>
-              <div class="card-top__room">
-                <span class="card-top__text">2 x Guests</span>
-                <span class="card-top__text">1 x Room</span>
+              <div class="card__room">
+                <span>2 x Guests</span><span>1 x Room</span>
               </div>
             </div>
-            <div class="card-bottom">
-              <div class="card-bottom-left">Quick Booking</div>
-              <div class="card-bottom-right">12100</div>
+            <div class="card__quick">
+              <span>Quick Booking</span><span>12100</span>
             </div>
-            <button class="card-btn">View Other Options</button>
+            <button class="card__btn">View Other Options</button>
           </div>
-          <div class="hotel-content__map"></div>
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.98751596691!2d71.77282871486112!3d40.36480116672087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb84ba1d76a659%3A0x7bc998c6a195e3d5!2z0KLQkNCi0KMg0KTQpA!5e0!3m2!1sru!2s!4v1677003200432!5m2!1sru!2s"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-      </di>
+      </div>
     </section>
+    <section class="newsletter">
+      <div class="container newsletter__container">
+        <div class="newsletter__wrapper">
+          <span class="newsletter__subscribe">subscribe to our</span>
+          <h3 class="newsletter__newsletter">Newsletter</h3>
+        </div>
+        <form class="newsletter__form" action="#!">
+          <input
+            class="newsletter__input"
+            type="text"
+            value="Your email address"
+          />
+          <button class="newsletter__bnt">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

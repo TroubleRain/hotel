@@ -402,16 +402,20 @@ body {
 }
 
 .hotel-content {
+  margin-top: 20px;
   margin-bottom: 70px;
 }
 .hotel-content__container {
-  gap: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3px;
 }
 .hotel-content__wrapper {
   display: -webkit-box;
@@ -424,104 +428,86 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.hotel-content__card {
-  padding: 29px 29px 26px 26px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 8px;
-  background: #0A223D;
   width: 350px;
-  height: 210px;
-  color: white;
-}
-.hotel-content__map {
-  border-radius: 10px;
-  width: 347px;
-  height: 213px;
-  background: red;
+  height: 450px;
 }
 
 .swiper {
+  margin: 0;
   width: 728px;
   height: 450px;
-  position: relative;
-  background: orangered;
+  background: grey;
   border-radius: 8px;
-  overflow: hidden;
 }
 .swiper::after {
   content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: -o-linear-gradient(top, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  border-radius: 8px;
-  z-index: 1;
 }
-.swiper__wrapper {
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.swiper-slide::after {
+  top: 0;
+  content: "";
   position: absolute;
+  display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: -o-linear-gradient(top, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 1;
   width: 100%;
   height: 100%;
 }
-.swiper__slide {
-  width: 100%;
-  height: 100%;
-}
-.swiper__slide img {
+.swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.swiper__button-prev {
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  position: absolute;
+.swiper-button-prev {
+  left: unset;
+  right: unset;
+}
+.swiper-button-prev::after {
+  content: "";
   background: url("../../img/arr-left.svg") no-repeat center;
   width: 30px;
   height: 30px;
-  left: 19px;
-  top: 50%;
-  z-index: 2;
-  cursor: pointer;
-}
-.swiper__button-next {
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
   position: absolute;
+  left: 8px;
+}
+.swiper-button-next::after {
+  content: "";
   background: url("../../img/arr-right.svg") no-repeat center;
   width: 30px;
   height: 30px;
-  right: 16px;
-  top: 50%;
-  z-index: 2;
-  cursor: pointer;
+  position: absolute;
+  right: 8px;
 }
 
-.card-top {
+.card {
+  height: 210px;
+  background: red;
+  border-radius: 8px;
+  background: #0A223D;
+  padding: 26px 26px;
+}
+.card__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
-.card-top__price {
+.card__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,61 +515,197 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.card__price span:nth-of-type(1) {
+  font-size: 10px;
+  color: white;
+}
+.card__price span:nth-of-type(2) {
   font-family: "Nunito";
-  font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 33px;
+  color: white;
 }
-.card-top__price-text {
-  font-family: "Nunito";
-  font-size: 10px;
-  line-height: 14px;
-}
-.card-top__time {
+.card__price span:nth-of-type(3) {
   font-family: "Nunito";
   font-size: 12px;
+  line-height: 16px;
+  color: white;
 }
-.card-top__room {
+.card__room {
+  font-family: "Nunito";
+  font-size: 12px;
+  line-height: 16px;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Nunito";
-  font-size: 12px;
-  line-height: 16px;
 }
-.card-top__text:not(:last-child) {
-  margin-bottom: 8px;
+.card__room span:first-child {
+  position: relative;
 }
-
-.card-bottom {
+.card__room span:first-child::before {
+  top: 0px;
+  left: -20px;
+  width: 14px;
+  height: 14px;
+  content: "";
+  background: url(../../img/icon/user.svg) no-repeat center center;
+  position: absolute;
+}
+.card__room span:last-child {
+  position: relative;
+}
+.card__room span:last-child::before {
+  top: 0px;
+  left: -26px;
+  width: 14px;
+  height: 14px;
+  content: "";
+  background: url(../../img/icon/home.svg) no-repeat center center;
+  position: absolute;
+}
+.card__quick {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: white;
   font-family: "Nunito";
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
+  margin-top: 9px;
   margin-bottom: 17px;
 }
-.card-btn {
-  width: 100%;
-  padding: 13px 0;
-  font-family: "Nunito";
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
+.card__btn {
+  border-radius: 4px;
   background: #EC1F46;
-  border-radius: 5px;
+  color: white;
+  width: 100%;
+  height: 45px;
+}
+
+.map {
+  width: 347px;
+  height: 210px;
+  border-radius: 8px;
+  background: orangered;
+}
+
+.newsletter {
+  width: 100vw;
+  height: 260px;
+  background: url(../../img/content/Rectangle25.jpg) no-repeat center center/cover;
+  position: relative;
+}
+.newsletter::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(10, 34, 61, 0.8);
+  top: 0;
+  left: 0;
+}
+.newsletter__container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 139px;
+     -moz-column-gap: 139px;
+          column-gap: 139px;
+}
+.newsletter__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  position: relative;
+  z-index: 2;
+}
+.newsletter__subscribe {
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: white;
+}
+.newsletter__newsletter {
+  font-family: "Mulish";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: white;
+}
+.newsletter__form {
+  padding-left: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 55px;
+  border-radius: 4px;
+  background: white;
+  position: relative;
+  z-index: 3;
+}
+.newsletter__input {
+  color: #BDBDBD;
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+.newsletter__bnt {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 65px;
+  height: 55px;
+  background: #EC1F46;
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 0px 4px 4px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
 }
 
 @media (max-width: 992px) {
@@ -597,6 +719,36 @@ body {
   }
   .container {
     width: 700px;
+  }
+  .hotel-content__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel-content__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: unset;
+    margin-top: 25px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .swiper {
+    width: 100%;
+    height: 450px;
+  }
+  .card {
+    width: 330px;
+    height: 210px;
+  }
+  .map {
+    width: 330px;
+    height: 210px;
   }
 }
 @media (max-width: 576px) {
@@ -663,5 +815,49 @@ body {
   }
   .rate {
     display: none;
+  }
+  .header {
+    color: #000000;
+  }
+  .hotel-content__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel-content__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: unset;
+    margin-top: 25px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .swiper {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
+  .newsletter__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 37px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .newsletter__form {
+    width: 280px;
+    height: 55px;
   }
 }
