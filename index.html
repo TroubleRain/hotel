@@ -130,21 +130,21 @@
     <section class="hotel-content">
       <div class="container hotel-content__container">
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper hotel-swiper">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper hotel-swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
+            <div class="swiper-slide hotel-swiper-slide">
               <img src="img/content/Rectangle 5.png" alt="" />
             </div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
+            <div class="swiper-slide hotel-swiper-slide"></div>
+            <div class="swiper-slide hotel-swiper-slide"></div>
           </div>
           <!-- If we need pagination -->
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev hotel-swiper-button-prev"></div>
+          <div class="swiper-button-next hotel-swiper-button-next"></div>
 
           <!-- If we need scrollbar -->
         </div>
@@ -192,7 +192,68 @@
         </form>
       </div>
     </section>
-
+    <section class="about-us">
+      <div class="conteainer about-us__container">
+        <h1 class="about-us__think">What people think about us</h1>
+        <div class="swiper about-us__swiper">
+          <div class="swiper-wrapper about-us__swiper-wrapper">
+            <div class="swiper-slide about-us__swiper-slide">
+              <div class="about-us__img">
+                <img src="img/content/about-us.jpg" alt="" />
+              </div>
+              <span class="about-us__name">Megan Fox</span>
+              <span class="about-us__data">Stayed 18 Nov, 2019</span>
+              <div class="about-us__stars">
+                <svg class="star">
+                  <use
+                    class="star__item"
+                    xlink:href="img/sprite/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="star">
+                  <use
+                    class="star__item"
+                    xlink:href="img/sprite/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="star">
+                  <use
+                    class="star__item"
+                    xlink:href="img/sprite/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="star">
+                  <use
+                    class="star__item"
+                    xlink:href="img/sprite/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="star">
+                  <use
+                    class="star__item"
+                    xlink:href="img/sprite/sprite.svg#star"
+                  ></use>
+                </svg>
+              </div>
+              <p class="about-us__text">
+                It was very nice hotel with cleanliness. Staff behavior was good
+                and polite. They welcome us very well. Issue was only that Lift
+                was not in working and we were allotted to 3rd floor and
+                amenities articles were in corner of gallery which were giving
+                bad feeling. Breakfast was good and support of the staff was
+                also very nice. Location is not good as per atmosphere, it is
+                very nearby most of the popular places but self location in a
+                narrow street is not good. Overall it was a good experience and
+                could recommend.
+              </p>
+            </div>
+            <div class="swiper-slide about-us__swiper-slide"></div>
+          </div>
+          <div class="swiper-button-prev about-us__swiper-button-prev"></div>
+          <div class="swiper-button-next about-us__swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
   </body>
