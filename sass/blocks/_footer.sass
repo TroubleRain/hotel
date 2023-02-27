@@ -1,1 +1,57 @@
+.footer
+  padding-top: 108px
+  padding-bottom: 46px
+  background: #0A223D
+  &__container
+    display: flex
 
+.footer-top
+  display: flex
+  flex-basis: 100%
+  justify-content: space-between
+  &__logo
+    font-family: 'Luckiest Guy'
+    font-size: 64px
+    line-height: 64px
+    width: 166px
+    color: $white
+    align-self: center
+
+    & span
+      color: $red
+
+.lists
+  display: flex
+  flex-direction: column
+  color: #BDBDBD
+  align-items: start
+  gap: 23px
+
+  &__lable
+    font-family: 'Mulish'
+    font-weight: 700
+    font-size: 18px
+    line-height: 23px
+    color: $white
+    text-transform: uppercase
+    margin-right: 42px
+
+  &__list
+    display: flex
+    flex-direction: column
+    gap: 13px
+
+  &__item
+
+  &__wrapper
+    display: flex
+    margin-top: auto
+
+  &__sprite
+    width: 20px
+    height: 20px
+    &:not(:last-child)
+      margin-right: 10px
+
+  &__sprite-svg
+    fill: $white
